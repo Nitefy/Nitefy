@@ -1,0 +1,77 @@
+<!doctype html>
+<html class="scroll-smooth" lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <title>Nitefy — Tu negocio funcionando. Tú viviendo.</title>
+  <meta name="description" content="Automatizamos las tareas repetitivas de tu negocio — facturas, seguimientos, papeleo — para que recuperes más de 40 horas al mes. Sin jerga, sin complicaciones." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Nitefy — Tu negocio funcionando. Tú viviendo." />
+  <meta property="og:description" content="Automatizamos las tareas repetitivas de tu negocio para que dejes de perder más de 40 horas al mes en papeleo." />
+  <meta property="og:url" content="https://nitefy.es" />
+  <meta property="og:locale" content="es_ES" />
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "secondary-fixed-dim":"#6fd8c7","secondary-container":"#8cf5e3",
+            "surface-tint":"#585d77","tertiary-fixed-dim":"#ffb95e",
+            "error-container":"#ffdad6","on-primary-fixed-variant":"#41455f",
+            "on-primary":"#ffffff","surface-dim":"#dbdad6",
+            "surface-bright":"#faf9f5","primary-fixed":"#dde1ff",
+            "primary":"#03071d","surface-container":"#efeeea",
+            "on-tertiary-fixed-variant":"#653e00","background":"#faf9f5",
+            "surface-container-lowest":"#ffffff","on-tertiary":"#ffffff",
+            "tertiary-fixed":"#ffddb8","surface":"#faf9f5",
+            "outline-variant":"#c7c5ce","on-tertiary-container":"#b87b24",
+            "outline":"#77767e","surface-container-high":"#e9e8e4",
+            "on-error-container":"#93000a","on-secondary-container":"#007165",
+            "on-surface":"#1b1c1a","on-error":"#ffffff",
+            "surface-container-highest":"#e3e2df","on-background":"#1b1c1a",
+            "inverse-surface":"#30312e","inverse-primary":"#c1c5e3",
+            "tertiary-container":"#311c00","on-secondary":"#ffffff",
+            "secondary-fixed":"#8cf5e3","surface-variant":"#e3e2df",
+            "secondary":"#006b5f","primary-container":"#1a1f36",
+            "on-secondary-fixed":"#00201c","surface-container-low":"#f5f4f0",
+            "on-primary-fixed":"#151a31","on-secondary-fixed-variant":"#005047",
+            "tertiary":"#110700","error":"#ba1a1a",
+            "on-tertiary-fixed":"#2a1700","inverse-on-surface":"#f2f1ed",
+            "on-primary-container":"#8286a2","primary-fixed-dim":"#c1c5e3",
+            "on-surface-variant":"#46464d","brand-teal":"#2B9E8F"
+          },
+          borderRadius: { DEFAULT:"0.25rem", lg:"8px", xl:"12px", full:"9999px" },
+          spacing: {
+            "margin-desktop":"40px","stack-sm":"8px","section-padding":"80px",
+            "stack-md":"16px","container-max-width":"1200px","margin-mobile":"16px",
+            "stack-lg":"32px","gutter":"24px","unit":"8px"
+          },
+          fontFamily: {
+            "label-sm":["Inter"],"subtitle-lg":["Inter"],"headline-lg":["DM Sans"],
+            "display-lg":["DM Sans"],"body-md":["Inter"],"label-md":["Inter"],
+            "headline-md":["DM Sans"],"body-lg":["Inter"]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { background-color: #faf9f5; }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .border-thin { border-width: 0.5px; }
+  </style>
+</head>
+<body class="font-body-md text-on-surface antialiased">
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
